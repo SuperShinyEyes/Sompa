@@ -23,6 +23,11 @@ class MapViewController: UIViewController, MGLMapViewDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        mapView.showsUserLocation = true
+        initDefaultLocation()
+    }
 
 
 }
@@ -49,6 +54,20 @@ extension MapViewController {
         case .halfUp: return CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: bounds.width, height: bounds.height/2))
         case .halfDown: return CGRect(origin: CGPoint(x: 0, y: bounds.height/2), size: CGSize(width: bounds.width, height: bounds.height/2))
         }
-        
+    }
+    
+    fileprivate func zoomIn(_ coord: CLLocationCoordinate2D, zoomLevel: Double = ZoomLevelConstants.zoomLevelForFloorPlanView) {
+        mapView.setCenter(coord, zoomLevel: zoomLevel, animated: true)
+    }
+    
+    fileprivate func initDefaultLocation() {
+        let coords: CLLocationCoordinate2D
+//        if let location = mapView.userLocation {
+//            coords = location.coordinate
+//            print("Show gps location")
+//        } else {
+            coords = MapVCConstants.defaultCenterCoordinate
+//        }
+        mapView.setCenter(coords, zoomLevel: ZoomLevelConstants.zoomLevelForMapView, animated: false)
     }
 }
