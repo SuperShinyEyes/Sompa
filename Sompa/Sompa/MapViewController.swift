@@ -12,6 +12,7 @@ import Mapbox
 class MapViewController: UIViewController, MGLMapViewDelegate {
     
     var mapView: MGLMapView!
+    var poolAnnotations: [MGLPointAnnotation]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,8 +28,8 @@ class MapViewController: UIViewController, MGLMapViewDelegate {
     override func viewDidAppear(_ animated: Bool) {
         mapView.showsUserLocation = true
         initDefaultLocation()
+        loadData()
     }
-
 
 }
 
@@ -69,5 +70,24 @@ extension MapViewController {
             coords = MapVCConstants.defaultCenterCoordinate
 //        }
         mapView.setCenter(coords, zoomLevel: ZoomLevelConstants.zoomLevelForMapView, animated: false)
+    }
+}
+
+
+
+/**
+ Pool Data
+ */
+extension MapViewController {
+    fileprivate func loadData() {
+        poolAnnotations = PoolData.getPoolAnnotations()
+        mapView.addAnnotations(poolAnnotations!)
+    }
+}
+
+
+extension MapViewController {
+    func mapView(_ mapView: MGLMapView, annotationCanShowCallout annotation: MGLAnnotation) -> Bool {
+        return true
     }
 }
