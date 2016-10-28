@@ -18,6 +18,7 @@ enum AreaCenterCoordinates {
 
 
 enum MapVCConstants {
+    static let pokemonStyle = URL(string: "mapbox://styles/seyoung/ciutmz0u000y12inovl7s07vg")
     static let mapViewFrameSize = ViewFrameSize.fiveOverSix
     static let defaultCenterCoordinate = CLLocationCoordinate2DMake(AreaCenterCoordinates.otaniemi.0, AreaCenterCoordinates.otaniemi.1)
 }

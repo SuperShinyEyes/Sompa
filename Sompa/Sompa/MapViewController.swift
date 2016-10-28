@@ -16,6 +16,7 @@ class MapViewController: UIViewController, MGLMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        loadMapView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,9 +31,11 @@ class MapViewController: UIViewController, MGLMapViewDelegate {
  MGLMapView UI
  */
 extension MapViewController {
-    fileprivate func loadMapView(){
-        let mapViewFrame = getViewFrame(MapVCConstants.mapViewFrameSize)
-        mapView = MGLMapView(frame: mapViewFrame)
+     func loadMapView(){
+        let frame = getViewFrame(.fullScreen)
+        mapView = MGLMapView(frame: frame, styleURL: MapVCConstants.pokemonStyle)
+        
+        
         mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         mapView.delegate = self
         view.addSubview(mapView)
