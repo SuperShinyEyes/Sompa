@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06459E2DBFD2DCE51789D3FE /* Pods_Sompa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B91CFDDE52496E90090DB17 /* Pods_Sompa.framework */; };
+		239E6E66DC066E31955D3FF0 /* Pods_SompaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F801506B94DFDDF3E8B39D /* Pods_SompaTests.framework */; };
+		59B248F41DC33E6E0083CDA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B248F31DC33E6E0083CDA1 /* AppDelegate.swift */; };
+		59B248F61DC33E6E0083CDA1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B248F51DC33E6E0083CDA1 /* MapViewController.swift */; };
+		59B248F91DC33E6E0083CDA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59B248F71DC33E6E0083CDA1 /* Main.storyboard */; };
+		59B248FB1DC33E6F0083CDA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59B248FA1DC33E6F0083CDA1 /* Assets.xcassets */; };
+		59B248FE1DC33E6F0083CDA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59B248FC1DC33E6F0083CDA1 /* LaunchScreen.storyboard */; };
+		59B249091DC33E6F0083CDA1 /* SompaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B249081DC33E6F0083CDA1 /* SompaTests.swift */; };
+		59B249141DC340210083CDA1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B249131DC340210083CDA1 /* Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		59B249051DC33E6F0083CDA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59B248E81DC33E6E0083CDA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59B248EF1DC33E6E0083CDA1;
+			remoteInfo = Sompa;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		26A2519B86009E084EA92E5F /* Pods-Sompa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sompa.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sompa/Pods-Sompa.release.xcconfig"; sourceTree = "<group>"; };
+		4E392D880A26A0AC8A47D2D7 /* Pods-Sompa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sompa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sompa/Pods-Sompa.debug.xcconfig"; sourceTree = "<group>"; };
+		59B248F01DC33E6E0083CDA1 /* Sompa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sompa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		59B248F31DC33E6E0083CDA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		59B248F51DC33E6E0083CDA1 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		59B248F81DC33E6E0083CDA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		59B248FA1DC33E6F0083CDA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		59B248FD1DC33E6F0083CDA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		59B248FF1DC33E6F0083CDA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59B249041DC33E6F0083CDA1 /* SompaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SompaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		59B249081DC33E6F0083CDA1 /* SompaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SompaTests.swift; sourceTree = "<group>"; };
+		59B2490A1DC33E6F0083CDA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59B249131DC340210083CDA1 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Code/Constants.swift; sourceTree = "<group>"; };
+		6B91CFDDE52496E90090DB17 /* Pods_Sompa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sompa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81F801506B94DFDDF3E8B39D /* Pods_SompaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SompaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2E4DD647A58A193C1719A4A /* Pods-SompaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SompaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SompaTests/Pods-SompaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB0D47D4951C9D05EAF24735 /* Pods-SompaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SompaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SompaTests/Pods-SompaTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		59B248ED1DC33E6E0083CDA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06459E2DBFD2DCE51789D3FE /* Pods_Sompa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59B249011DC33E6F0083CDA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				239E6E66DC066E31955D3FF0 /* Pods_SompaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		363D3B0C962DF6547A562199 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B91CFDDE52496E90090DB17 /* Pods_Sompa.framework */,
+				81F801506B94DFDDF3E8B39D /* Pods_SompaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		59B248E71DC33E6E0083CDA1 = {
+			isa = PBXGroup;
+			children = (
+				59B248F21DC33E6E0083CDA1 /* Sompa */,
+				59B249071DC33E6F0083CDA1 /* SompaTests */,
+				59B248F11DC33E6E0083CDA1 /* Products */,
+				8F6375EE937A42F1AA268096 /* Pods */,
+				363D3B0C962DF6547A562199 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		59B248F11DC33E6E0083CDA1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				59B248F01DC33E6E0083CDA1 /* Sompa.app */,
+				59B249041DC33E6F0083CDA1 /* SompaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59B248F21DC33E6E0083CDA1 /* Sompa */ = {
+			isa = PBXGroup;
+			children = (
+				59B249151DC3427F0083CDA1 /* Supporting Files */,
+				59B248F51DC33E6E0083CDA1 /* MapViewController.swift */,
+				59B249131DC340210083CDA1 /* Constants.swift */,
+			);
+			path = Sompa;
+			sourceTree = "<group>";
+		};
+		59B249071DC33E6F0083CDA1 /* SompaTests */ = {
+			isa = PBXGroup;
+			children = (
+				59B249081DC33E6F0083CDA1 /* SompaTests.swift */,
+				59B2490A1DC33E6F0083CDA1 /* Info.plist */,
+			);
+			path = SompaTests;
+			sourceTree = "<group>";
+		};
+		59B249151DC3427F0083CDA1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				59B248F31DC33E6E0083CDA1 /* AppDelegate.swift */,
+				59B248F71DC33E6E0083CDA1 /* Main.storyboard */,
+				59B248FC1DC33E6F0083CDA1 /* LaunchScreen.storyboard */,
+				59B248FA1DC33E6F0083CDA1 /* Assets.xcassets */,
+				59B248FF1DC33E6F0083CDA1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8F6375EE937A42F1AA268096 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E392D880A26A0AC8A47D2D7 /* Pods-Sompa.debug.xcconfig */,
+				26A2519B86009E084EA92E5F /* Pods-Sompa.release.xcconfig */,
+				E2E4DD647A58A193C1719A4A /* Pods-SompaTests.debug.xcconfig */,
+				EB0D47D4951C9D05EAF24735 /* Pods-SompaTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		59B248EF1DC33E6E0083CDA1 /* Sompa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59B2490D1DC33E6F0083CDA1 /* Build configuration list for PBXNativeTarget "Sompa" */;
+			buildPhases = (
+				419CB46C883F023644BC2566 /* [CP] Check Pods Manifest.lock */,
+				59B248EC1DC33E6E0083CDA1 /* Sources */,
+				59B248ED1DC33E6E0083CDA1 /* Frameworks */,
+				59B248EE1DC33E6E0083CDA1 /* Resources */,
+				E176AEC57D81210A67AAC2CF /* [CP] Embed Pods Frameworks */,
+				A2CA7927FF578245039A89CF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sompa;
+			productName = Sompa;
+			productReference = 59B248F01DC33E6E0083CDA1 /* Sompa.app */;
+			productType = "com.apple.product-type.application";
+		};
+		59B249031DC33E6F0083CDA1 /* SompaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59B249101DC33E6F0083CDA1 /* Build configuration list for PBXNativeTarget "SompaTests" */;
+			buildPhases = (
+				6EB71C0867E6D448B3E83843 /* [CP] Check Pods Manifest.lock */,
+				59B249001DC33E6F0083CDA1 /* Sources */,
+				59B249011DC33E6F0083CDA1 /* Frameworks */,
+				59B249021DC33E6F0083CDA1 /* Resources */,
+				B32881ECC91230D8C2D925A2 /* [CP] Embed Pods Frameworks */,
+				94CF5364A18BB05BE65D61E0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59B249061DC33E6F0083CDA1 /* PBXTargetDependency */,
+			);
+			name = SompaTests;
+			productName = SompaTests;
+			productReference = 59B249041DC33E6F0083CDA1 /* SompaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		59B248E81DC33E6E0083CDA1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Park Seyoung";
+				TargetAttributes = {
+					59B248EF1DC33E6E0083CDA1 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = ES4B789T7A;
+						ProvisioningStyle = Automatic;
+					};
+					59B249031DC33E6F0083CDA1 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = ES4B789T7A;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 59B248EF1DC33E6E0083CDA1;
+					};
+				};
+			};
+			buildConfigurationList = 59B248EB1DC33E6E0083CDA1 /* Build configuration list for PBXProject "Sompa" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 59B248E71DC33E6E0083CDA1;
+			productRefGroup = 59B248F11DC33E6E0083CDA1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				59B248EF1DC33E6E0083CDA1 /* Sompa */,
+				59B249031DC33E6F0083CDA1 /* SompaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		59B248EE1DC33E6E0083CDA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59B248FE1DC33E6F0083CDA1 /* LaunchScreen.storyboard in Resources */,
+				59B248FB1DC33E6F0083CDA1 /* Assets.xcassets in Resources */,
+				59B248F91DC33E6E0083CDA1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59B249021DC33E6F0083CDA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		419CB46C883F023644BC2566 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6EB71C0867E6D448B3E83843 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		94CF5364A18BB05BE65D61E0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SompaTests/Pods-SompaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2CA7927FF578245039A89CF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sompa/Pods-Sompa-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B32881ECC91230D8C2D925A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SompaTests/Pods-SompaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E176AEC57D81210A67AAC2CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sompa/Pods-Sompa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		59B248EC1DC33E6E0083CDA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59B248F61DC33E6E0083CDA1 /* MapViewController.swift in Sources */,
+				59B248F41DC33E6E0083CDA1 /* AppDelegate.swift in Sources */,
+				59B249141DC340210083CDA1 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59B249001DC33E6F0083CDA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59B249091DC33E6F0083CDA1 /* SompaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		59B249061DC33E6F0083CDA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59B248EF1DC33E6E0083CDA1 /* Sompa */;
+			targetProxy = 59B249051DC33E6F0083CDA1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		59B248F71DC33E6E0083CDA1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59B248F81DC33E6E0083CDA1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		59B248FC1DC33E6F0083CDA1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59B248FD1DC33E6F0083CDA1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		59B2490B1DC33E6F0083CDA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		59B2490C1DC33E6F0083CDA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		59B2490E1DC33E6F0083CDA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E392D880A26A0AC8A47D2D7 /* Pods-Sompa.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ES4B789T7A;
+				INFOPLIST_FILE = Sompa/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.seyoung.Sompa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		59B2490F1DC33E6F0083CDA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26A2519B86009E084EA92E5F /* Pods-Sompa.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ES4B789T7A;
+				INFOPLIST_FILE = Sompa/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.seyoung.Sompa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		59B249111DC33E6F0083CDA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2E4DD647A58A193C1719A4A /* Pods-SompaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ES4B789T7A;
+				INFOPLIST_FILE = SompaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.seyoung.SompaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sompa.app/Sompa";
+			};
+			name = Debug;
+		};
+		59B249121DC33E6F0083CDA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB0D47D4951C9D05EAF24735 /* Pods-SompaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ES4B789T7A;
+				INFOPLIST_FILE = SompaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.seyoung.SompaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sompa.app/Sompa";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		59B248EB1DC33E6E0083CDA1 /* Build configuration list for PBXProject "Sompa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59B2490B1DC33E6F0083CDA1 /* Debug */,
+				59B2490C1DC33E6F0083CDA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59B2490D1DC33E6F0083CDA1 /* Build configuration list for PBXNativeTarget "Sompa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59B2490E1DC33E6F0083CDA1 /* Debug */,
+				59B2490F1DC33E6F0083CDA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59B249101DC33E6F0083CDA1 /* Build configuration list for PBXNativeTarget "SompaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59B249111DC33E6F0083CDA1 /* Debug */,
+				59B249121DC33E6F0083CDA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 59B248E81DC33E6E0083CDA1 /* Project object */;
+}
