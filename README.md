@@ -3,4 +3,5 @@ Open Water Activity School Project
 
 ## Credits
 Icon artwork by [Freepik](http://www.freepik.com) from [Flaticon](http://www.flaticon.com)
-Magnifier Gregor Cresna
+
+Magnifier, My Activity image by Gregor Cresna from [Flaticon](http://www.flaticon.com)

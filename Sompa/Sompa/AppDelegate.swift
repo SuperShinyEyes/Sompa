@@ -47,6 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 extension AppDelegate {
+    
     func loadRootViewController() {
         /// Load main view
         window = UIWindow.init(frame: UIScreen.main.bounds)
