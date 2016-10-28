@@ -51,14 +51,26 @@ extension AppDelegate {
         /// Load main view
         window = UIWindow.init(frame: UIScreen.main.bounds)
         
-        // Set Background Color of window
-        window?.backgroundColor = UIColor.white
+        let nav1 = UINavigationController()
+        let first = MapViewController()
+        first.tabBarItem = UITabBarItem(title: "Pools & Beaches", image: UIImage(named: "magnifier"), tag: 0)
+        nav1.viewControllers = [first]
+        nav1.delegate = nav1
+        
+        let second = ActivityViewController()
+        second.tabBarItem = UITabBarItem(title: "My Activity", image: UIImage(named: "profile"), tag: 1)
+        let nav2 = UINavigationController()
+        nav2.viewControllers = [second]
+        nav2.delegate = nav2
+        
+        let tabs = UITabBarController()
+        tabs.viewControllers = [nav1, nav2]
         
         // Allocate memory for an instance of the 'MainViewController' class
-        let mainViewController = MapViewController()
+//        let mainViewController = MapViewController()
         
         // Set the root view controller of the app's window
-        window!.rootViewController = mainViewController
+        window!.rootViewController = tabs
         
         // Make the window visible
         window!.makeKeyAndVisible()

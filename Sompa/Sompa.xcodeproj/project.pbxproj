@@ -10,6 +10,8 @@
 		06459E2DBFD2DCE51789D3FE /* Pods_Sompa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B91CFDDE52496E90090DB17 /* Pods_Sompa.framework */; };
 		239E6E66DC066E31955D3FF0 /* Pods_SompaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F801506B94DFDDF3E8B39D /* Pods_SompaTests.framework */; };
 		59B143091DC36DB100EF90DD /* PoolData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B143081DC36DB100EF90DD /* PoolData.swift */; };
+		59B143171DC3852F00EF90DD /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B143161DC3852F00EF90DD /* ActivityViewController.swift */; };
+		59B1431C1DC385F200EF90DD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B1431B1DC385F200EF90DD /* Extensions.swift */; };
 		59B248F41DC33E6E0083CDA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B248F31DC33E6E0083CDA1 /* AppDelegate.swift */; };
 		59B248F61DC33E6E0083CDA1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B248F51DC33E6E0083CDA1 /* MapViewController.swift */; };
 		59B248F91DC33E6E0083CDA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59B248F71DC33E6E0083CDA1 /* Main.storyboard */; };
@@ -33,6 +35,8 @@
 		26A2519B86009E084EA92E5F /* Pods-Sompa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sompa.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sompa/Pods-Sompa.release.xcconfig"; sourceTree = "<group>"; };
 		4E392D880A26A0AC8A47D2D7 /* Pods-Sompa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sompa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sompa/Pods-Sompa.debug.xcconfig"; sourceTree = "<group>"; };
 		59B143081DC36DB100EF90DD /* PoolData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PoolData.swift; path = Code/PoolData.swift; sourceTree = "<group>"; };
+		59B143161DC3852F00EF90DD /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActivityViewController.swift; path = Code/Activity/ActivityViewController.swift; sourceTree = "<group>"; };
+		59B1431B1DC385F200EF90DD /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Code/Helper/Extensions.swift; sourceTree = "<group>"; };
 		59B248F01DC33E6E0083CDA1 /* Sompa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sompa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59B248F31DC33E6E0083CDA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59B248F51DC33E6E0083CDA1 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +83,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		59B143181DC385A600EF90DD /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				59B143161DC3852F00EF90DD /* ActivityViewController.swift */,
+			);
+			name = Activity;
+			sourceTree = "<group>";
+		};
+		59B143191DC385B300EF90DD /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				59B248F51DC33E6E0083CDA1 /* MapViewController.swift */,
+				59B143081DC36DB100EF90DD /* PoolData.swift */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		59B1431A1DC385C400EF90DD /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				59B249131DC340210083CDA1 /* Constants.swift */,
+				59B1431B1DC385F200EF90DD /* Extensions.swift */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
 		59B248E71DC33E6E0083CDA1 = {
 			isa = PBXGroup;
 			children = (
@@ -103,9 +133,9 @@
 			isa = PBXGroup;
 			children = (
 				59B249151DC3427F0083CDA1 /* Supporting Files */,
-				59B248F51DC33E6E0083CDA1 /* MapViewController.swift */,
-				59B143081DC36DB100EF90DD /* PoolData.swift */,
-				59B249131DC340210083CDA1 /* Constants.swift */,
+				59B143191DC385B300EF90DD /* Map */,
+				59B143181DC385A600EF90DD /* Activity */,
+				59B1431A1DC385C400EF90DD /* Helper */,
 			);
 			path = Sompa;
 			sourceTree = "<group>";
@@ -349,7 +379,9 @@
 				59B248F61DC33E6E0083CDA1 /* MapViewController.swift in Sources */,
 				59B143091DC36DB100EF90DD /* PoolData.swift in Sources */,
 				59B248F41DC33E6E0083CDA1 /* AppDelegate.swift in Sources */,
+				59B143171DC3852F00EF90DD /* ActivityViewController.swift in Sources */,
 				59B249141DC340210083CDA1 /* Constants.swift in Sources */,
+				59B1431C1DC385F200EF90DD /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
