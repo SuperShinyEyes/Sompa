@@ -54,7 +54,7 @@ extension AppDelegate {
         
         let nav1 = UINavigationController()
         let first = MapViewController()
-        first.tabBarItem = UITabBarItem(title: "Pools & Beaches", image: UIImage(named: "magnifier"), tag: 0)
+        first.tabBarItem = UITabBarItem(title: "Explore", image: UIImage(named: "magnifier"), tag: 0)
         nav1.viewControllers = [first]
         nav1.delegate = nav1
         
